@@ -257,4 +257,18 @@
   .navbar:hover .logo svg {
     transform: rotate(-180deg);
   }
+
+  .nav-link.active-link{
+    background: #394a75;
+    color: #fff;
+    filter: none;
+  }
+  .nav-link.active-link .number{
+    background: #fff;
+    color: #394a75;
+  }
+  .nav-link.active-link:hover .number{
+    background: #fff;
+    color: #394a75 !important;
+  }
 }

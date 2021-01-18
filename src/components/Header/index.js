@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 //Images
 import Logo from "../../images/logo-mobile.svg";
@@ -13,10 +13,14 @@ function Header({ changeTheme, nameTheme }) {
     <header className="header">
       <nav className="navbar">
         <ul className="navbar-nav">
-          <li className="logo">
-            <Link to="/" className="nav-link">
+          <li
+            className="logo"
+            alt="Voltar para a home"
+            title="Voltar para a home"
+          >
+            <NavLink to="/" className="nav-link">
               <span className="link-text logo-text">
-                <img src={Logo} alt="" alt="" />
+                <img src={Logo} alt="Logo" />
               </span>
               <svg
                 aria-hidden="true"
@@ -41,65 +45,113 @@ function Header({ changeTheme, nameTheme }) {
                   ></path>
                 </g>
               </svg>
-            </Link>
+            </NavLink>
           </li>
 
           <li className="nav-item homepage">
-            <Link to="/" className="nav-link">
+            <NavLink to="/" className="nav-link" activeClassName="active-link">
               <img src={Homepage} alt="" title="" />
-            </Link>
+            </NavLink>
           </li>
 
           <li className="nav-item">
-            <Link to="/exercicio-1" className="nav-link">
+            <NavLink
+              to="/exercicio-1"
+              className="nav-link"
+              activeClassName="active-link"
+              alt="Exercício 1"
+              title="Exercício 1"
+            >
               <span className="link-text">Exercício</span>
               <span className="number">1</span>
-            </Link>
+            </NavLink>
           </li>
 
           <li className="nav-item">
-            <Link to="/exercicio-2" className="nav-link">
+            <NavLink
+              to="/exercicio-2"
+              className="nav-link"
+              activeClassName="active-link"
+              alt="Exercício 2"
+              title="Exercício 2"
+            >
               <span className="link-text">Exercício</span>
               <span className="number">2</span>
-            </Link>
+            </NavLink>
           </li>
 
           <li className="nav-item">
-            <Link to="/exercicio-3" className="nav-link">
+            <NavLink
+              to="/exercicio-3"
+              className="nav-link"
+              activeClassName="active-link"
+              alt="Exercício 3"
+              title="Exercício 3"
+            >
               <span className="link-text">Exercício</span>
               <span className="number">3</span>
-            </Link>
+            </NavLink>
           </li>
 
           <li className="nav-item">
-            <Link to="/exercicio-4" className="nav-link">
+            <NavLink
+              to="/exercicio-4"
+              className="nav-link"
+              activeClassName="active-link"
+              alt="Exercício 4"
+              title="Exercício 4"
+            >
               <span className="link-text">Exercício</span>
               <span className="number">4</span>
-            </Link>
+            </NavLink>
           </li>
 
           <li className="nav-item">
-            <Link to="/exercicio-5" className="nav-link">
+            <NavLink
+              to="/exercicio-5"
+              className="nav-link"
+              activeClassName="active-link"
+              alt="Exercício 5"
+              title="Exercício 5"
+            >
               <span className="link-text">Exercício</span>
               <span className="number">5</span>
-            </Link>
+            </NavLink>
           </li>
 
           <li className="nav-item">
-            <Link to="/exercicio-6" className="nav-link">
+            <NavLink
+              to="/exercicio-6"
+              className="nav-link"
+              activeClassName="active-link"
+              alt="Exercício 6"
+              title="Exercício 6"
+            >
               <span className="link-text">Exercício</span>
               <span className="number">6</span>
-            </Link>
+            </NavLink>
           </li>
 
           <li className="nav-item">
-            <Link to="/exercicio-7" className="nav-link">
+            <NavLink
+              to="/exercicio-7"
+              className="nav-link"
+              activeClassName="active-link"
+              alt="Exercício 7"
+              title="Exercício 7"
+            >
               <span className="link-text">Exercício</span>
               <span className="number">7</span>
-            </Link>
+            </NavLink>
           </li>
 
-          <li className="nav-item" id="themeButton" onClick={changeTheme}>
+          <li
+            className="nav-item"
+            id="themeButton"
+            onClick={changeTheme}
+            alt="Mudar o tema"
+            title="Mudar o tema"
+          >
             <span className="nav-link">
               <span className="link-text">
                 {nameTheme === "light" ? "Dark" : "Light"}
@@ -115,7 +167,7 @@ function Header({ changeTheme, nameTheme }) {
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  className="svg-inline--fa fa-sunglasses fa-w-18 fa-7x"  
+                  className="svg-inline--fa fa-sunglasses fa-w-18 fa-7x"
                 >
                   <g className="fa-group">
                     <path
