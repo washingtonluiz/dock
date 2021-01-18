@@ -6,7 +6,7 @@ Test
 
 > Status do Projeto: Concluido :heavy_check_mark:
 
-## Deploy da Aplicação com Netlify: :dash:
+## Deploy da Aplicação com Vercel: :dash:
 
 > https://dock-f64tw1o3w.vercel.app/
 
