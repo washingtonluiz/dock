@@ -4,25 +4,6 @@ import React from "react";
 import Card from "../../components/Card";
 
 function Exercicio3() {
-  // const data = {
-  //   items: [{ value: 1 }, { value: 1 }],
-  // };
-
-  // function changeData(values) {
-  //   let localData = { ...values };
-
-  //   localData.items.map((i) => {
-  //     i.value = 2;
-  //   });
-
-  //   return localData;
-  // }
-
-  // const newData = changeData(data);
-
-  // console.log("data", data);
-  // console.log("newData", newData);
-
   const data = {
     items: [{ value: 1 }, { value: 1 }],
   };
@@ -31,7 +12,7 @@ function Exercicio3() {
     let localData = JSON.parse(JSON.stringify({ ...values }));
 
     localData.items.map((i) => {
-      i.value = 2;
+      return (i.value = 2);
     });
 
     return localData;
@@ -39,7 +20,8 @@ function Exercicio3() {
 
   const newData = changeData(data);
 
-  console.log(data, newData);
+  console.log("Data: ", data);
+  console.log("New Data: ", newData);
   return (
     <Card title="Exercício 3">
       <div className="card-box-content-exercise">
@@ -49,7 +31,20 @@ function Exercicio3() {
 
         <div className="card-box-content-exercise--answer">
           <h6>Resposta:</h6>
-          <p>respostasssssss</p>
+          <p>
+            O erro do código se dá porque a função "changeData()" ao atribuir o
+            valor a variavel "localData", acaba também alterando a variável
+            "data", deixando ambos os objetos com o mesmo valor. Isto acontece
+            porque foi feita uma cópia por referência.
+          </p>
+          <p>
+            Para corrigir o problema alterei a forma que o programa copia o
+            objeto, para que seja feita uma cópia por valor, onde é criado um
+            novo endereço para a variável.
+          </p>
+          <p>
+            Veja o resultado no <strong>Console Log</strong>.
+          </p>
         </div>
       </div>
     </Card>

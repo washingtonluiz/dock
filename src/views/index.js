@@ -36,6 +36,7 @@ function Index() {
                 title="Facebook"
                 alt="Facebook"
                 target="_blank"
+                rel="noreferrer"
               >
                 <FontAwesomeIcon icon={faFacebookF} />
               </a>
@@ -44,6 +45,7 @@ function Index() {
                 title="Instagram"
                 alt="Instagram"
                 target="_blank"
+                rel="noreferrer"
               >
                 <FontAwesomeIcon icon={faInstagram} />
               </a>
@@ -52,6 +54,7 @@ function Index() {
                 title="Linkedin"
                 alt="Linkedin"
                 target="_blank"
+                rel="noreferrer"
               >
                 <FontAwesomeIcon icon={faLinkedinIn} />
               </a>
