@@ -11,6 +11,7 @@ function Exercicio1() {
     const elem = e.target.value;
 
     if (elem === "") {
+      setString("");
       setStringModified("");
     } else {
       setString(elem);
@@ -49,7 +50,9 @@ function Exercicio1() {
         />
         <button
           type="button"
-          className="btn btn-primary ml-2 disabled"
+          className={`btn btn-primary ml-2 ${
+            string.length > 3 ? "" : "disabled"
+          }`}
           onClick={transformString}
         >
           Enviar

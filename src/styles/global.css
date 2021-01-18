@@ -1,4 +1,29 @@
+.disabled{
+  pointer-events: none;
+}
 .main {
   height: 100vh;
   overflow: hidden;
+}
+
+/* Exercícios */
+.card-box-content-exercise > h6 {
+  margin-bottom: 2rem;
+}
+
+/* Exercício 6 */
+.card-box-content-exercise--example-6 h2 {
+  color: #394a75;
+  font-size: 2em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.card-box-content-exercise--example-6 h2:after, .card-box-content-exercise--example-6 h2:before {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 3px;
+  background: #394a75;
+  margin: 0 auto;
 }

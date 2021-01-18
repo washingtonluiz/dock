@@ -3,9 +3,6 @@ import React from "react";
 //Components
 import Card from "../../components/Card";
 
-//CSS
-import "./index.css";
-
 function Exercicio2() {
   return (
     <Card title="Exercício 2">
