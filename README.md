@@ -1,5 +1,4 @@
 # Dock
-Test
 
 ## Descrição do Projeto
 <p align="justify">Teste FrontEnd para a empresa Dock onde o objetivo era somente responder o questionário, porém resolvi tentar algo diferente e desafiador.</p>
