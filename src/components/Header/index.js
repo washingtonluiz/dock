@@ -158,7 +158,6 @@ function Header({ changeTheme, nameTheme }) {
               </span>
               {nameTheme === "dark" && (
                 <svg
-                  className="theme-icon"
                   id="darkIcon"
                   aria-hidden="true"
                   focusable="false"
@@ -167,7 +166,7 @@ function Header({ changeTheme, nameTheme }) {
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 576 512"
-                  className="svg-inline--fa fa-sunglasses fa-w-18 fa-7x"
+                  className="theme-icon svg-inline--fa fa-sunglasses fa-w-18 fa-7x"
                 >
                   <g className="fa-group">
                     <path
@@ -185,7 +184,6 @@ function Header({ changeTheme, nameTheme }) {
               )}
               {nameTheme === "light" && (
                 <svg
-                  className="theme-icon"
                   id="lightIcon"
                   aria-hidden="true"
                   focusable="false"
@@ -194,7 +192,7 @@ function Header({ changeTheme, nameTheme }) {
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
-                  className="svg-inline--fa fa-moon-stars fa-w-16 fa-7x"
+                  className="theme-icon svg-inline--fa fa-moon-stars fa-w-16 fa-7x"
                 >
                   <g className="fa-group">
                     <path

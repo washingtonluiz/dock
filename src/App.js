@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { Router, Switch, Route } from "react-router-dom";
+import history from "./history";
 
 //Componentes
 import Header from "./components/Header";
@@ -26,7 +27,7 @@ function App() {
   }
 
   return (
-    <Router>
+    <Router history={history}>
       <main className={`main d-flex ${theme}`}>
         <Header changeTheme={changeTheme} nameTheme={theme} />
         <div className="content">
