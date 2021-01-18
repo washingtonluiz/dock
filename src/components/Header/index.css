@@ -170,6 +170,7 @@
     color: red;
   }
   .nav-item:last-child .nav-link svg {
+    font-size: 3rem;
     width: 2.5rem;
   }
 
@@ -260,18 +261,17 @@
   }
 
   .nav-link.active-link{
-    background: #828282;
-    color: #fff;
+    background: var(--bg-secondary);
     filter: none;
     position: relative;
   }
   .nav-link.active-link .number{
-    background: #fff;
-    color: #394a75;
+    background: #394a75;
+    color: #fff;
   }
   .nav-link.active-link:hover .number{
-    background: #fff;
-    color: #394a75 !important;
+    background: #394a75;
+    color: #fff;
   }
 
   .nav-link.active-link:after{
@@ -283,7 +283,7 @@
     height: 0;
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
-    border-left: 10px solid #828282;
+    border-left: 10px solid var(--bg-secondary);
     position: absolute;
     right: -20px;
   }

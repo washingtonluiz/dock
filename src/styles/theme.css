@@ -12,6 +12,10 @@
   --bg-secondary: #b1b1b1;
 }
 
+.dark.main {
+  background: #3a3a3a;
+}
+
 .theme-icon {
   display: none;
 }
@@ -26,4 +30,16 @@
 
 .light .nav-link:hover .number {
   color: #fff;
+}
+
+/* Header/Nav */
+.dark .nav-link.active-link{
+  background: var(--bg-secondary);;
+  color: #fff;
+  filter: none;
+  position: relative;
+}
+.dark .nav-link.active-link .number{
+  background: #394a75;
+  color: var(--text-secondary);
 }

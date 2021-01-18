@@ -5,6 +5,9 @@
   height: 100vh;
   overflow: hidden;
 }
+.svg-inline--fa.fa-w-14, .svg-inline--fa.fa-w-16, .svg-inline--fa.fa-w-18 {
+  width: 0;
+}
 
 /* Exercícios */
 .card-box-content-exercise > h6 {
