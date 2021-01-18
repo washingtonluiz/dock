@@ -259,9 +259,10 @@
   }
 
   .nav-link.active-link{
-    background: #394a75;
+    background: #828282;
     color: #fff;
     filter: none;
+    position: relative;
   }
   .nav-link.active-link .number{
     background: #fff;
@@ -270,5 +271,19 @@
   .nav-link.active-link:hover .number{
     background: #fff;
     color: #394a75 !important;
+  }
+
+  .nav-link.active-link:after{
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    width: 0; 
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid #828282;
+    position: absolute;
+    right: -20px;
   }
 }

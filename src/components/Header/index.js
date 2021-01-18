@@ -20,7 +20,7 @@ function Header({ changeTheme, nameTheme }) {
           >
             <NavLink to="/" className="nav-link">
               <span className="link-text logo-text">
-                <img src={Logo} alt="Logo" />
+                <img src={Logo} alt="Dock" title="Dock" />
               </span>
               <svg
                 aria-hidden="true"
