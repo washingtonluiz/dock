@@ -19,10 +19,10 @@ function Index() {
       <div className="col-md-8 mt-5">
         <div className="card profile-card">
           <div className="card-img-block">
-            <img className="img-fluid" src={BgProfile} alt="Card image cap" />
+            <img className="img-fluid" src={BgProfile} alt="" />
           </div>
           <div className="card-body pt-5">
-            <img src={ImageProfile} alt="profile-image" className="profile" />
+            <img src={ImageProfile} alt="" className="profile" />
             <h5 className="card-title ">Washington Luiz</h5>
             <p className="card-text">
               Apaixonado pela área da tecnologia, com foco no desenvolvimento

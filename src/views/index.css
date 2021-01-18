@@ -1,5 +1,7 @@
 .content {
   padding: 0 15px;
+  overflow: auto;
+  padding-bottom: 100px;
   position: relative;
   width: 100%;
   z-index: 1;
@@ -66,10 +68,6 @@
 
 /* Small screens */
 @media only screen and (max-width: 600px) {
-  .content {
-    overflow: auto;
-    padding-bottom: 100px;
-  }
   .content .container {
     padding: 0;
   }
