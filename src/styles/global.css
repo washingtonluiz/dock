@@ -27,3 +27,10 @@
   background: #394a75;
   margin: 0 auto;
 }
+
+/* Exercício 7 */
+.card-box-content-exercise--example-7 input::placeholder {
+  color: red;
+  font-size: 1.2em;
+  font-style: italic;
+}
